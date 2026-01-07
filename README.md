@@ -32,8 +32,8 @@ python -m unittest MyCalculatorTest.py
 python -m unittest TriangleTests.py
 python -m unittest MyAgeTest.py
 ````
-Tech Stack
+## Tech Stack
 
-  Language: Python 3.x
+###Language: Python 3.x
 
-  Framework: unittest (Standard Library)
+###Framework: unittest (Standard Library)
