@@ -8,11 +8,15 @@ This repository demonstrates software testing principles, specifically **Test-Dr
 
 ## Modules
 
-### 1. Triangle Classifier
+### 1. Calculator
+* **Logic:** `CalculatorUtils.py` handles arithmetic operations.
+* **Testing:** `MyCalculatorTest.py` validates operations and prevents crashes on division by zero.
+
+### 2. Triangle Classifier
 * **Logic:** `TriangleUtils.py` determines if a triangle is Equilateral, Isosceles, or Scalene.
 * **Testing:** `TriangleTests.py` validates logic against invalid inputs (e.g., negative sides, inequality violations).
 
-### 2. Age Validator
+### 3. Age Validator
 * **Logic:** `AgeUtils.py` processes user age input into categories.
 * **Testing:** `MyAgeTest.py` performs **Boundary Value Analysis** (e.g., testing ages 17, 18, 19, 64, 65).
 
@@ -20,8 +24,10 @@ This repository demonstrates software testing principles, specifically **Test-Dr
 You can execute the test suites directly from the command line:
 
 ```bash
-# Run the Triangle Test Suite
-python -m unittest TriangleTests.py
+# Run All Tests (Auto-discovery)
+python -m unittest discover -p "*Test.py"
 
-# Run the Age Test Suite
+# Run Specific Suites
+python -m unittest MyCalculatorTest.py
+python -m unittest TriangleTests.py
 python -m unittest MyAgeTest.py
