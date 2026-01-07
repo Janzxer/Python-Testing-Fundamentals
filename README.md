@@ -24,14 +24,14 @@ This repository demonstrates software testing principles, specifically **Test-Dr
 You can execute the test suites directly from the command line:
 
 ```bash
-Run All Tests (Auto-discovery)
+# Run All Tests (Auto-discovery)
 python -m unittest discover -p "*Test.py"
 
-Run Specific Suites
+# Run Specific Suites
 python -m unittest MyCalculatorTest.py
 python -m unittest TriangleTests.py
 python -m unittest MyAgeTest.py
-
+````
 Tech Stack
 
     Language: Python 3.x
